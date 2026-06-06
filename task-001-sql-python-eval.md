@@ -217,7 +217,7 @@ if order["status"].upper() == 'PAID' and order["amount"] > 0:
 
 The propmpt is a little vague in terms of the output required, simply stating that it should match that of the SQL.\
 I have therefore produced a list of dictionaries, with keys matching the columns in the SQL query.\
-Note this requires more verbose code.\
+Note this requires more verbose code.
 
 The lookup method in the output table is O(n²). I have chosen this for readability and my current level of Python expertise.\
 Other methods would be more efficient in terms of processing time, especially for large datasets.
