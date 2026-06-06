@@ -233,7 +233,7 @@ def total_spent(orders_dict_list):
             output_list.append({"customer_id" : order["customer_id"], "total_spent" : 0})
             customers.add(order["customer_id"])
         # Add order amount to total
-        if order["status"].upper() == 'PAID'if order["status"].upper() == 'PAID' and order["amount"] > 0::
+        if order["status"].upper() == 'PAID':
             # Find customer in output list
             customer_index = next((index for index, customer in enumerate(output_list) if customer["customer_id"] == order["customer_id"]), None)
             # Add order amount to total spent
