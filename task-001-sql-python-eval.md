@@ -207,9 +207,9 @@ GROUP BY customer_id;
 The code assumes that:\
 o Customers with no paid orders should be included\
 o "amount" is always numeric\
-o "status" is always present and is a string
-o "customer_id" is hashable and a string
-o Refunds (negative amounts) are included
+o "status" is always present and is a string\
+o "customer_id" is hashable and a string\
+o Refunds (negative amounts) are included\
 o Ordering of the output list is not required
 
 If refunds were to be excluded, the if condition checking status would simply require and additional clause:\
