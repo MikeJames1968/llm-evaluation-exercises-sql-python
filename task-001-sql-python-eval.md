@@ -212,7 +212,7 @@ o "customer_id" is hashable and a string\
 o Refunds (negative amounts) are included\
 o Ordering of the output list is not required
 
-If refunds were to be excluded, the if condition checking status would simply require and additional clause:\
+If refunds were to be excluded, the if condition checking status would simply require an additional clause:\
 if order["status"].upper() == 'PAID' and order["amount"] > 0:
 
 The propmpt is a little vague in terms of the output required, simply stating that it should match that of the SQL.\
